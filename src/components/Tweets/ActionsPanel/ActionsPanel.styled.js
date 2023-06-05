@@ -1,14 +1,17 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const Panel = styled.div`
   width: 100%;
-  max-width:100vw;
+  max-width: 100vw;
+  flex-grow: 1;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 `;
 
 export const ActionsBox = styled.ul`
+  flex-grow: 1;
   display: flex;
-  gap: ${p => p.theme.space[4]};
+  justify-content: center;
+  gap: ${(p) => p.theme.space[4]};
   margin-left: auto;
 `;

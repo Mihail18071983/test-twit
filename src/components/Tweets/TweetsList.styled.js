@@ -2,8 +2,9 @@ import styled from '@emotion/styled';
 
 export const List = styled.ul`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 38px;
+  gap: 30px;
   margin-top: ${p => p.theme.space[5]};
   margin-bottom: ${p => (p.noPadding ? 0 : p.theme.space[5])};
 `;
