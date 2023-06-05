@@ -6,7 +6,7 @@ export const SectionBox = styled.section`
 `;
 
 export const Container = styled.div`
-  width: 1280px;
+  max-width: 1280px;
   padding: 0 ${theme.space[5]};
   margin-left: auto;
   margin-right: auto;

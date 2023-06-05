@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export const Panel = styled.div`
   width: 100%;
+  max-width:100vw;
   display: flex;
   align-items: flex-end;
 `;

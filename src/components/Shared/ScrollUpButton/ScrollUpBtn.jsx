@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import ScrollUpButton from './ScrollUpBtn.styled';
 
-const ScrollUpBtn = ({ icon: Icon = null, iconSize, round, mediaType }) => {
+const ScrollUpBtn = ({ icon: Icon = null, iconSize, round }) => {
   const [scroll, setScroll] = useState(0);
 
   const handleScroll = () => {
@@ -29,7 +29,6 @@ const ScrollUpBtn = ({ icon: Icon = null, iconSize, round, mediaType }) => {
       style={{
         transform: scroll < 300 ? 'translateY(+300%)' : 'translateY(0)',
       }}
-      mediaType={mediaType}
     >
       {Icon && <Icon size={iconSize} />}
     </ScrollUpButton>

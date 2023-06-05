@@ -34,7 +34,7 @@ export const Link = styled(NavLink)`,
     color: ${theme.colors.primary};
     background-color: ${theme.colors.secondary};
     padding: ${theme.space[1]} ${theme.space[3]};
-    border-radius: ${theme.radii.normal};
+    border-radius: ${theme.radius.normal};
     box-shadow: ${theme.shadow.medium};
 
     :hover {

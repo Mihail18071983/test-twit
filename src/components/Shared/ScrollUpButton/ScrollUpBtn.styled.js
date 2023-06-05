@@ -6,14 +6,14 @@ const ScrollUpButton = styled.button`
   bottom: ${theme.space[6]};
   right: ${theme.space[6]};
   display: inline-flex;
-  opacity: 0.7;
+  opacity: 0.6;
   padding: ${theme.space[3]};
   color: ${theme.colors.primary};
   background-color: ${p =>
     p.disabled ? theme.colors.muted : theme.colors.accent};
   cursor: pointer;
   border: ${theme.borders.none};
-  border-radius: ${p => (p.round ? theme.radii.round : theme.radii.normal)};
+  border-radius: ${p => (p.round ? theme.radius.round : theme.radius.normal)};
   box-shadow: ${theme.shadow.low};
   transition-property: all;
   transition-duration: 250ms;

@@ -1,6 +1,7 @@
 
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import GlobalStyle from 'components/GlobalStyle';
 
 import Spinner from 'components/Shared/Spinner';
 
@@ -11,6 +12,7 @@ const Tweets = lazy(() => import('pages/Tweets'));
 function App() {
   return (
     <>
+      <GlobalStyle/>
       <Suspense fallback={<Spinner />}>
         <Routes>
           <Route path="/" element={<SharedLayout />}>

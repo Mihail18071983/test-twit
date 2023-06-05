@@ -1,17 +1,17 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { RiArrowGoBackLine } from 'react-icons/ri';
-import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
+// import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
 
 import Button from 'components/Shared/Button';
 import { Panel, ActionsBox } from './ActionsPanel.styled';
-import Filter from './Filter';
+// import Filter from './Filter';
 
 const ActionsPanel = ({ setFilters, setUsers, setPage }) => {
   const navigate = useNavigate();
 
-  const [FilterOpen, setFilterOpen] = useState(false);
+  // const [FilterOpen, setFilterOpen] = useState(false);
 
   return (
     <Panel>

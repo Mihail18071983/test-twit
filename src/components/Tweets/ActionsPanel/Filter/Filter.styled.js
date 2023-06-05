@@ -10,7 +10,7 @@ export const FilterBox = styled.div`
   align-items: flex-start;
   padding: ${p => p.theme.space[4]};
   background-color: ${p => p.theme.colors.secondary};
-  border-radius: ${p => p.theme.radii.high};
+  border-radius: ${p => p.theme.radius.high};
   z-index: 2;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   transition: ${p => p.theme.transition.primary};

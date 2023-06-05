@@ -6,7 +6,7 @@ import GoitLogo from './GoIT-logo';
 export const TweetBox = styled.li`
 list-style: none;
   position: relative;
-  width: 380px;
+  width: calc(100%/3 - 2*48px);
   height: 460px;
   background: linear-gradient(
     114.99deg,

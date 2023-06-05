@@ -1,9 +1,9 @@
 import { HeaderBox, HeaderContainer } from './Container.styled';
 
-const Container = ({ children, mediaType }) => {
+const Container = ({ children }) => {
   return (
-    <HeaderBox mediaType={mediaType}>
-      <HeaderContainer mediaType={mediaType}>{children}</HeaderContainer>
+    <HeaderBox >
+      <HeaderContainer>{children}</HeaderContainer>
     </HeaderBox>
   );
 };

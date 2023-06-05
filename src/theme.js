@@ -55,7 +55,7 @@ const theme = {
     normal: '1px solid',
   },
 
-  radii: {
+  radius: {
     none: '0',
     normal: '8px',
     high: '16px',
@@ -71,7 +71,6 @@ const theme = {
   },
 
   shadow: {
-    // ${shadowColor}
     low: `0.2px 0.8px 0.7px hsl(${shadowColor} / 0.47),
     0.3px 1.2px 1.1px -2px hsl(${shadowColor} / 0.35),
     0.7px 3px 2.7px -4.1px hsl(${shadowColor} / 0.23);`,
