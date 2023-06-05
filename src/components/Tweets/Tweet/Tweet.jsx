@@ -55,7 +55,6 @@ const Tweet = ({ user }) => {
 
   useEffect(() => {
     if (user) {
-      console.log(user);
       setUser(user);
     }
   }, [user]);
