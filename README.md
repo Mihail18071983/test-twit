@@ -1,31 +1,28 @@
-# Create React App
+Welcome to the Test-Twit app! This README document provides essential information about the app, its features, and how to use it effectively.
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+Introduction
+Test-Twit is a social media app that allows called "twits" and share them with the world. It provides a simple and intuitive interface for expressing your thoughts, ideas, or anything you'd like to share with others.
 
-## Deploy Your Own
+Features
+The TestTwit app offers the following features:
 
-Deploy your own Create React App project with Vercel.
+User Authentication: Create an account or log in to your existing account to access personalized features (not allowed yet).
+Posting Twits: Compose and publish twits of up to 280 characters (not allowed yet).
+Viewing Twits: Read and browse through twits posted by other users (not allowed yet).
+Liking Twits: Show your appreciation for a twit by liking it.
+Commenting on Twits: Engage in discussions by leaving comments on twits(not allowed yet).
+Following Users: Stay updated with twits from your favorite users by following them.
+Notifications: Receive real-time notifications for activities related to your twits and profile(not allowed yet).
+Search Functionality: Find specific twits or users using the search feature(not allowed yet).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+Installation
+The TestTwit app is a web-based application, and no installation is required. You can access it using a compatible web browser by visiting https://test-twit.vercel.app/.
 
-_Live Example: https://create-react-template.vercel.app/_
+Usage
+When you are going to the https://test-twit.vercel.app/ you can see Home page. You can move to the tweet page in 2 ways:
+Clicking by the button "Tweets" in Nav menu or by link list of tweets in the main page.
 
-## Available Scripts
+In tweet page users cards are downloading by 3. For downloading next 3 cards you can press the load more button. When you get all the user's cards the load more is desapired.
+Following Users: If you find a user whose twits you enjoy, you can follow them to see their twits in your personalized feed. Click on the "Follow" button to follow them.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+To go back in to the home page you can click "Go back" button or "Home" in the Nav menu.
