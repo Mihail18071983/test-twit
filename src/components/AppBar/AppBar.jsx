@@ -1,9 +1,9 @@
 import { memo } from 'react';
 
-import Navigation from './Navigation';
-import Container from './Container';
+import Navigation from './Navigation/Navigation';
+import Container from './Container/Container';
 
-import Logo from './Logo';
+import Logo from './Logo/Logo';
 
 const AppBar = () => {
   return (

@@ -1,5 +1,5 @@
-import Section from 'components/Shared/Section';
-import TweetsList from 'components/Tweets';
+import Section from 'components/Shared/Section/Section';
+import TweetsList from 'components/Tweets/TweetsList';
 
 const Tweets = () => {
   return (

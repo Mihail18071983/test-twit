@@ -2,8 +2,8 @@ import { Outlet } from 'react-router-dom';
 
 import { TbArrowBigUpLinesFilled } from 'react-icons/tb';
 
-import AppBar from 'components/AppBar';
-import ScrollUpButton from 'components/Shared/ScrollUpButton';
+import AppBar from 'components/AppBar/AppBar';
+import ScrollUpButton from 'components/Shared/ScrollUpButton/ScrollUpBtn.styled';
 
 const SharedLayout = () => {
   return (

@@ -27,8 +27,6 @@ const Tweet = ({ user }) => {
   const patchFollow = async (id, newFollowState) => {
     try {
       const user = await getUserById(id);
-      console.log("user", user);
-
       if (newFollowState) {
         user.followers += 1;
         user.follow = true;

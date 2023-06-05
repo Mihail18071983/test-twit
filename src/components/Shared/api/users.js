@@ -21,7 +21,6 @@ export const getAllUsers = async (p=1) => {
 export const getUserById = async (id) => {
   try {
     const { data } = await instance.get(`/users/${id}`);
-    console.log(data);
     return data;
   } catch (err) {
     console.log(err);

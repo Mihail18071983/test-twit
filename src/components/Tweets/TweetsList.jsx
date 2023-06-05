@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
 
 import { List, EmptyListMessage } from "./TweetsList.styled";
-import Tweet from "./Tweet";
+import Tweet from "./Tweet/Tweet";
 import Button from "components/Shared/Button";
-import ActionsPanel from "./ActionsPanel";
+import ActionsPanel from "./ActionsPanel/ActionsPanel";
 import { getAllUsers } from "components/Shared/api/users";
 
 const TweetsList = () => {
   const [items, setItems] = useState([]);
   const [TotalPages, setTotalPages] = useState(null);
   const [page, setPage] = useState(1);
-  const [Filters, setFilters] = useState("all");
+
 
   useEffect(() => {
     const getUsers = async (p) => {
@@ -37,7 +37,6 @@ const TweetsList = () => {
   return (
     <>
       <ActionsPanel
-        setFilters={setFilters}
         setUsers={setItems}
         setPage={setPage}
       />

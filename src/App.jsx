@@ -5,9 +5,9 @@ import GlobalStyle from 'components/GlobalStyle';
 
 import Spinner from 'components/Shared/Spinner';
 
-const SharedLayout = lazy(() => import('pages/SharedLayout'));
-const Home = lazy(() => import('pages/Home'));
-const Tweets = lazy(() => import('pages/Tweets'));
+const SharedLayout = lazy(() => import('./pages/SharedLayout/SharedLayout'));
+const Home = lazy(() => import('./pages/Home/Home'));
+const Tweets = lazy(() => import('./pages/Tweets/Tweets'));
 
 function App() {
   return (

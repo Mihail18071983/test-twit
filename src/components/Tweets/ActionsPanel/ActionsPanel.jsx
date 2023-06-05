@@ -1,22 +1,16 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-import { RiArrowGoBackLine } from 'react-icons/ri';
-import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
+import { RiArrowGoBackLine } from "react-icons/ri";
 
-import Button from 'components/Shared/Button';
-import { Panel, ActionsBox } from './ActionsPanel.styled';
-import Filter from './Filter';
+import Button from "components/Shared/Button";
+import { Panel, ActionsBox } from "./ActionsPanel.styled";
 
-const ActionsPanel = ({ setFilters, setUsers, setPage }) => {
+const ActionsPanel = () => {
   const navigate = useNavigate();
-
-  const [FilterOpen, setFilterOpen] = useState(false);
 
   return (
     <Panel>
-      <ActionsBox>
-        <div>
+      <ActionsBox>  
           <Button
             onClick={() => navigate(-1)}
             icon={RiArrowGoBackLine}
@@ -24,25 +18,6 @@ const ActionsPanel = ({ setFilters, setUsers, setPage }) => {
           >
             Go back
           </Button>
-        </div>
-        <div>
-          <div style={{ position: 'relative' }}>
-            <Button
-              onClick={() => setFilterOpen(prev => !prev)}
-              icon={FilterOpen ? BsCaretUpFill : BsCaretDownFill}
-              iconSize={20}
-            >
-              Filters
-            </Button>
-            {FilterOpen && (
-              <Filter
-                setFilters={setFilters}
-                setUsers={setUsers}
-                setPage={setPage}
-              />
-            )}
-          </div>
-        </div>
       </ActionsBox>
     </Panel>
   );

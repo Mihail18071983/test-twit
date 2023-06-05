@@ -1,4 +1,4 @@
-import Section from "components/Shared/Section";
+import Section from "../../components/Shared/Section/Section";
 import theme from "theme";
 import { Link } from "react-router-dom";
 
