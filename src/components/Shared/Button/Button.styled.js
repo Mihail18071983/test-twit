@@ -7,9 +7,8 @@ export const Btn = styled.button`
   width: 196px;
   height: 50px;
   padding: 14px 28px;
-  margin-left: auto;
-  margin-right: auto;
   color: #373737;
+  text-align: center;
   background-color: ${p =>
     p.active ? p.theme.colors.accent : p.theme.colors.secondary};
   border: none;

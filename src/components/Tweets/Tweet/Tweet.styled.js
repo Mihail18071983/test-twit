@@ -4,6 +4,9 @@ import img from '../../../assets/picture2 1.png';
 import GoitLogo from './GoIT-logo';
 
 export const TweetBox = styled.li`
+display: flex;
+flex-direction: column;
+align-items: center;
 list-style: none;
   position: relative;
   width: calc(100%/3 - 2*30px);

@@ -68,7 +68,7 @@ const Tweet = ({ user, onFollowChange }) => {
         <span>{User.tweets.toLocaleString("en-US")} TWEETS</span>
         <span>{User.followers.toLocaleString("en-US")} FOLLOWERS</span>
       </InfoBox>
-      <Button onClick={followHandle} active={User.follow}>
+      <Button onClick={followHandle} active={User.follow} style={{margin:0}}>
         {User.follow ? "FOLLOWING" : "FOLLOW"}
       </Button>
     </TweetBox>
