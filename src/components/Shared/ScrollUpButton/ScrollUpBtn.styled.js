@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import theme from 'theme';
 
-const ScrollUpButton = styled.button`
+const ScrollUpButtonStyled = styled.button`
   position: fixed;
   bottom: ${theme.space[6]};
   right: ${theme.space[6]};
@@ -27,4 +27,4 @@ const ScrollUpButton = styled.button`
   }
 `;
 
-export default ScrollUpButton;
+export default ScrollUpButtonStyled;

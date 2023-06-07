@@ -1,7 +1,10 @@
-import styled from '@emotion/styled';
-import theme from 'theme';
+import styled from "@emotion/styled";
+import theme from "theme";
 
 export const SectionBox = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: ${theme.space[6]} 0;
 `;
 

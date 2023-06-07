@@ -1,17 +1,19 @@
 import styled from "@emotion/styled";
 
-export const Panel = styled.div`
-  width: 100%;
-  max-width: 100vw;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-`;
+
+import { Form } from "react-bootstrap";
 
 export const ActionsBox = styled.ul`
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   gap: ${(p) => p.theme.space[4]};
-  margin-left: auto;
 `;
+
+
+
+export const StyledFormSelect = styled(Form.Select)`
+background-color:${(p) => p.theme.colors.secondary};
+font-size: ${(p) => p.theme.fontSizes.m};
+font-weight: ${(p) => p.theme.fontWeights.bold};
+text-align: center;
+border-radius: ${(p) => p.theme.radius.normal};`;

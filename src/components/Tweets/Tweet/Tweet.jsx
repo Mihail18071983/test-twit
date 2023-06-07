@@ -7,7 +7,7 @@ import { TweetBox, GoIt, ImageBox, Delimiter, InfoBox } from "./Tweet.styled";
 import Avatar from "./Avatar";
 import Button from "components/Shared/Button";
 
-const Tweet = ({ user }) => {
+const Tweet = ({ user, onFollowChange }) => {
   const [User, setUser] = useState({
     id: "",
     name: "",
@@ -21,6 +21,7 @@ const Tweet = ({ user }) => {
     const newFollowState = !User.follow;
     setUser({ ...User, follow: newFollowState });
 
+    onFollowChange(user.id);
     patchFollow(User.id, newFollowState);
   };
 
@@ -67,7 +68,7 @@ const Tweet = ({ user }) => {
         <span>{User.tweets.toLocaleString("en-US")} TWEETS</span>
         <span>{User.followers.toLocaleString("en-US")} FOLLOWERS</span>
       </InfoBox>
-      <Button onClick={followHandle} active={User.follow}>
+      <Button onClick={followHandle} active={User.follow} style={{margin:0}}>
         {User.follow ? "FOLLOWING" : "FOLLOW"}
       </Button>
     </TweetBox>
