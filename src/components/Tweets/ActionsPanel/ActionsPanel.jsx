@@ -4,7 +4,7 @@ import { RiArrowGoBackLine } from "react-icons/ri";
 
 import Button from "components/Shared/Button";
 import {ActionsBox } from "./ActionsPanel.styled";
-import { Form } from "react-bootstrap";
+import { StyledFormSelect } from "./ActionsPanel.styled";
 
 const ActionsPanel = ({ applyFilter, filter }) => {
   const navigate = useNavigate();
@@ -23,11 +23,11 @@ const ActionsPanel = ({ applyFilter, filter }) => {
       >
         Go back
       </Button>
-      <Form.Select value={filter} onChange={handleFilterChange}>
+      <StyledFormSelect value={filter} onChange={handleFilterChange}>
         <option value="all">All</option>
         <option value="following">Following</option>
         <option value="follow">Follow</option>
-      </Form.Select>
+      </StyledFormSelect>
     </ActionsBox>
   );
 };
