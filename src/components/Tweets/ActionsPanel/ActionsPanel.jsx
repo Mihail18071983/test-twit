@@ -5,8 +5,12 @@ import { RiArrowGoBackLine } from "react-icons/ri";
 import Button from "components/Shared/Button";
 import { Panel, ActionsBox } from "./ActionsPanel.styled";
 
-const ActionsPanel = () => {
+const ActionsPanel = ({applyFilter }) => {
   const navigate = useNavigate();
+
+  const handleFilterChange = (e) => {
+    applyFilter(e.target.value);
+  };
 
   return (
     <Panel>
@@ -17,7 +21,12 @@ const ActionsPanel = () => {
             iconSize={20}
           >
             Go back
-          </Button>
+        </Button>
+        <select onChange={handleFilterChange}>
+        <option value="all">All</option>
+        <option value="following">Following</option>
+        <option value="follow">Follow</option>
+      </select>
       </ActionsBox>
     </Panel>
   );

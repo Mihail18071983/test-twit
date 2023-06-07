@@ -10,7 +10,10 @@ const TweetsList = () => {
   const [items, setItems] = useState([]);
   const [TotalPages, setTotalPages] = useState(null);
   const [page, setPage] = useState(1);
-
+  const [filter, setFilter] = useState("all");
+  const applyFilter = (filterValue) => {
+    setFilter(filterValue);
+  };
 
   useEffect(() => {
     const getUsers = async (p) => {
@@ -18,6 +21,9 @@ const TweetsList = () => {
         const users = await getAllUsers(p);
         const totalPages = 4;
         setTotalPages(totalPages);
+
+       
+
         setItems((items) => [...items, ...users]);
       } catch (error) {
         console.error(error.message);
@@ -34,21 +40,28 @@ const TweetsList = () => {
     setPage((prev) => prev + 1);
   };
 
+   // eslint-disable-next-line array-callback-return
+        const filteredItems = items.filter((item) => {
+          if (filter === "all") return true;
+          if (filter === "following") return item.follow;
+          if (filter === "follow") return !item.follow;
+        });
+  console.log('filtered items', filteredItems)
+
   return (
     <>
       <ActionsPanel
-        setUsers={setItems}
-        setPage={setPage}
+        applyFilter={applyFilter}
       />
-      {items.length > 0 && (
+      {filteredItems.length > 0 && (
         <List noPadding={page >= TotalPages}>
-          {items.map((item) => (
+          {filteredItems.map((item) => (
             <Tweet key={item.id} user={item} />
           ))}
         </List>
       )}
-      {items.length < 1 && <EmptyListMessage>List is empty</EmptyListMessage>}
-      {items.length > 0 && page !== TotalPages && (
+      {filteredItems.length < 1 && <EmptyListMessage>List is empty</EmptyListMessage>}
+      {filteredItems.length > 0 && page !== TotalPages && (
         <Button onClick={loadMore}>Load more</Button>
       )}
     </>
