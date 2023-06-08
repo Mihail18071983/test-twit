@@ -1,4 +1,5 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
+ import ellipse from '../../../../assets/Ellipse.png';
 
 export const AvatarBox = styled.div`
   width: 80px;
@@ -14,13 +15,23 @@ export const AvatarBox = styled.div`
   overflow: hidden;
 `;
 
-export const Ellipse = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
+export const EllipseWrapper = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
+
+  ::after {
+    content: "";
+    background-image: url(${ellipse});
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 `;
+
 
 export const Image = styled.img`
   width: 95%;

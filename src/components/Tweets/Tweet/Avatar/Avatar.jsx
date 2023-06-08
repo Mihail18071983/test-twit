@@ -1,12 +1,14 @@
-import { AvatarBox, Ellipse, Image } from './Avatar.styled';
+import { AvatarBox, Image, EllipseWrapper } from "./Avatar.styled";
 
-import ellipse from '../../../../assets/Ellipse.png';
+// import ellipse from '../../../../assets/Ellipse.png';
 
 const Avatar = ({ avatar }) => {
   return (
     <AvatarBox>
-      <Ellipse src={ellipse} />
-      <Image src={avatar} />
+      <EllipseWrapper>
+        <Image src={avatar} alt="image-avatar" />
+      </EllipseWrapper>
+      {/* <Ellipse src={ellipse} /> */}
     </AvatarBox>
   );
 };
